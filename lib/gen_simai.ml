@@ -57,7 +57,7 @@ let gen_simai (l_tm, l_ho) arr_map ochan = if List.is_empty l_tm || List.is_empt
         let pat = int_of_float ((float_of_int (e - s)) *. 96. /. 60000. *. bpm_next +. 0.5) in
         let g = gcd pat 384 in
         let (n, d) = (pat / g, 384 / g) in
-        Printf.fprintf ochan "/%dh[%d:%d]" arr_map.(p) n d;
+        Printf.fprintf ochan "/%dh[%d:%d]" arr_map.(p) d n;
       print_hos l
     in
 
@@ -68,7 +68,7 @@ let gen_simai (l_tm, l_ho) arr_map ochan = if List.is_empty l_tm || List.is_empt
         let pat = int_of_float ((float_of_int (e - s)) *. 96. /. 60000. *. bpm_next +. 0.5) in
         let g = gcd pat 384 in
         let (n, d) = (pat / g, 384 / g) in
-        Printf.fprintf ochan "%dh[%d:%d]" arr_map.(p) n d;
+        Printf.fprintf ochan "%dh[%d:%d]" arr_map.(p) d n;
       print_hos (List.tl hos));
 
     let rec print_comma n = if n <= 0 then () else
