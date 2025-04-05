@@ -1,0 +1,4 @@
+(executable
+ (public_name osu2mai)
+ (name main)
+ (libraries osu2mai))

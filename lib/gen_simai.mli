@@ -1,0 +1,1 @@
+val gen_simai : (Types.timing list * Types.hit_obj list) -> int array -> out_channel -> unit
