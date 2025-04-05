@@ -5,22 +5,22 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github XajilX/osu2simai_ml))
 
-(authors "Author Name <author@example.com>")
+(authors "XajilX <XajilX@outlook.com>")
 
-(maintainers "Maintainer Name <maintainer@example.com>")
+(maintainers "")
 
-(license LICENSE)
+(license MIT)
 
 (documentation https://url/to/documentation)
 
 (package
  (name osu2mai)
- (synopsis "A short synopsis")
- (description "A longer description")
+ (synopsis "")
+ (description "Just for fun")
  (depends ocaml)
  (tags
-  ("add topics" "to describe" your project)))
+  ("parse" "osu" "simai")))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html
